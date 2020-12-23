@@ -18,7 +18,7 @@ class KeChengApplicationTests {
 		User user=userService.findByPhone("13395555451");
 		String token= JWTUtils.generateJsonWebToken(user);
 		System.out.println(token);
-
+		System.out.println(token);
 		Claims claims=JWTUtils.checkJWT(token);
 		System.out.println(claims.get("name"));
 		System.out.println(claims.get("head_img"));
