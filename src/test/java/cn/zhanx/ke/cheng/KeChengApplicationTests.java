@@ -22,6 +22,7 @@ class KeChengApplicationTests {
 		Claims claims=JWTUtils.checkJWT(token);
 		System.out.println(claims.get("name"));
 		System.out.println(claims.get("head_img"));
+		System.out.println("修改一下");
 
 
 	}
